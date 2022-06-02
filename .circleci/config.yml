@@ -11,6 +11,8 @@ orbs:
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
   python: circleci/python@2.0.3
   heroku: circleci/heroku@1.2.6
+  slack: circleci/slack@4.4.4
+
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
@@ -69,3 +71,6 @@ workflows:
           filters:
             branches:
               only: main # only deploy when on main
+  
+      - slack/on-hold:
+          channel: circleci 
