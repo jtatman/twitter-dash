@@ -1,3 +1,5 @@
+pip=22.1.2
+wheel
 autopep8==1.4.4
 beautifulsoup4==4.8.0
 billiard==3.6.1.0
@@ -28,7 +30,7 @@ python-dateutil==2.8.0
 pytz==2019.2
 requests==2.22.0
 scikit-learn==0.21.3
-scipy==1.3.1
+scipy==1.3.3
 six==1.12.0
 sklearn==0.0
 soupsieve==1.9.3
